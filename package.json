@@ -1,0 +1,26 @@
+{
+  "name": "contactapi",
+  "version": "1.0.0",
+  "description": "Handle contact form messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphydaphy/contact-api.git"
+  },
+  "author": "Raph Hennessy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raphydaphy/contact-api/issues"
+  },
+  "homepage": "https://github.com/raphydaphy/contact-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "nodemailer": "^6.6.1"
+  }
+}
