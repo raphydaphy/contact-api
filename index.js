@@ -22,7 +22,9 @@ const transporter = nodemailer.createTransport({
 
 
 app.get('/', (req, res) => {
-  res.send("{'response': 'OK'}");
+  res.send({
+    response: "OK"
+  });
 });
 
 app.post('/contact', [
