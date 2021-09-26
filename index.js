@@ -3,6 +3,7 @@ const {check, validationResult} = require("express-validator");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const mysql = require("mysql");
+const cors = require("cors");
 
 require("dotenv").config();
 
@@ -11,6 +12,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 const gmailUser = process.env.GMAIL_USER;
 const gmailPass = process.env.GMAIL_PASS;
